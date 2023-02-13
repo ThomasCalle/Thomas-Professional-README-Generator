@@ -40,7 +40,7 @@ const promptForTitle = () =>{
     .prompt([
         {
             type: "input",
-            name: "Project Title",
+            name: "#Project Title",
             message: "What is the name of your Project Title? "
         },
     ])
@@ -55,7 +55,7 @@ const promptForDescription = () => {
         .prompt([
             {
                 type: "input",
-                name: "Description",
+                name: "##Description",
                 message: "Please, provide a short description explaining the W5H of your project:",
             },
         ])
@@ -70,16 +70,16 @@ const promptForTableOfContents = () => {
         .prompt([
             {
                 type: "checkbox",
-                name: "tableOfContents",
+                name: "##Table of Content",
                 message:
-                    "Select the sections you want to include in your README.md file:",
+                    "Select the options you would like to include in your README.md file:",
                 choices: [
-                    "Installation Instructions",
-                    "Usage Information",
-                    "License",
-                    "Contribution Guidelines",
-                    "Test Instructions",
-                    "Media",
+                    "[Installation Instructions](#Installation Instructions)",
+                    "[Usage Information](#Usage Information)",
+                    "[Contribution Guidelines](#Contribution Guidelines)",
+                    "[Test Instructions](#Test Instructions)",
+                    "[License](#License)",
+                    "[Questions](#Questions)",
                 ],
             },
         ])
