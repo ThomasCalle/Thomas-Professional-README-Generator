@@ -6,13 +6,13 @@ function renderLicenseBadge(license) {
 
   switch (license) {
       case "MIT License":
-          return "License: MIT";
+          return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
       case "Apache License 2.0":
-          return "License";
+          return "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
       case "GNU General Puplic License v3.0":
-          return "License: GPL v3";
+          return "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";
       case "Mozilla Public License 2.0":
-          return "License";
+          return "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)";
       default:
           return "";
   }
@@ -48,7 +48,8 @@ function renderLicenseSection(license) {
   
   This project is licensed under the ${license} license.
   
-  ${renderLicenseBadge(license)}`;
+  ${renderLicenseBadge(license)};
+  ${renderLicenseLink(license)}`
 }
 
 // Function to generate markdown for README
@@ -68,29 +69,22 @@ function generateMarkdown(data) {
   - [License](#License)
   - [Questions](#Questions)
 
+  ## Installation Instructions
   ${data.installation}
   
-  Usage
+  ## Usage Instructions
   ${data.usage}
   
-  Contributing
-  ${data.contributing}
+  ## Contribution Guidelines
+  ${data.contribution}
   
-  Tests
+  ## Test Instructions
   ${data.tests}
   
   ${renderLicenseSection(data.license)}
   
-  Questions
-  For any questions, feel free to reach out to me at ${
-      data.email
-  }. You can also find me on Github at [${data.github}
-  
-  
-  
-  
-](https://github.com/${data.github}).
-`;
+  ## Questions
+  For any questions, feel free to reach out to me at ${data.email}. You can also find me on Github at [${data.github}](https://github.com/${data.github}).`;
 }
 
 module.exports = generateMarkdown;
