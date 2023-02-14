@@ -44,7 +44,7 @@ function renderLicenseSection(license) {
       return "";
   }
 
-  return `## License
+  return `## License:
   
   This project is licensed under the ${license} license.
   
@@ -58,7 +58,7 @@ function generateMarkdown(data) {
   
   ${renderLicenseBadge(data.license)}
   
-  ## Description
+  ## Description:
   ${data.description}
   
   ## Table of Contents:
@@ -69,22 +69,26 @@ function generateMarkdown(data) {
   - [License](#License)
   - [Questions](#Questions)
 
-  ## Installation Instructions
+  ## Installation Instructions:
   ${data.installation}
   
-  ## Usage Instructions
+  ## Usage Instructions:
   ${data.usage}
   
-  ## Contribution Guidelines
+  ## Contribution Guidelines:
   ${data.contribution}
   
-  ## Test Instructions
-  ${data.tests}
+  ## Test Instructions:
+  ${data.test}
   
   ${renderLicenseSection(data.license)}
   
-  ## Questions
-  For any questions, feel free to reach out to me at ${data.email}. You can also find me on Github at [${data.github}](https://github.com/${data.github}).`;
+  ## Questions:
+  For additonal questions or open feedback, feel free to contact me at my email:${data.email}. 
+  You can also find me on Github at [${data.github}](https://github.com/${data.github}).
+  
+  © 2023 Confidential and Proprietary. All Rights Reserved.`;
 }
 
 module.exports = generateMarkdown;
+

@@ -13,7 +13,7 @@ const questions = [
     {
         type: "input",
         name: "description",
-        message: "Please, provide a short description explaining the W5H of your project:",
+        message: "Provide a short description, by explaining the W5H of your project:",
     },
     {
         type: "input",
@@ -23,33 +23,33 @@ const questions = [
     {
         type: "input",
         name: "usage",
-        message: "Provide instructions and examples for use. Include screenshots as needed. To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:",
+        message: "Provide instructions and examples for usage. Include screenshots as needed. To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax... ![](./assets/image/screenshot.pgn)",
     },
     {
         type: "input",
         name: "contribution",
-        message: "What are the guidelines for contributing to this project?",
+        message: "Explain the guidelines for contributing to this project?",
     },
     {
         type: "input",
         name: "test",
-        message: "What are the steps to run the tests for this project?",
+        message: "Explain the necessary steps to run the tests for your project?",
     },
     {
         type: "list",
         name: "license",
-        message: "What license would you like to use for this project?",
+        message: "Which license would you like to use for this project?",
         choices: ["MIT License", "Apache License 2.0", "GNU General Puplic License v3.0", "Mozilla Public License 2.0", "None"],
     },
     {
         type: "input",
         name: "github",
-        message: "Enter your Github Website Address",
+        message: "Please, enter your GitHub Profile Link:",
     },
     {
         type: "input",
         name: "email",
-        message: "What is your email address?",
+        message: "Please, enter your email address:",
     },
 ];
 
@@ -59,13 +59,13 @@ function writeToFile(fileName, data) {
         if (err) {
             return console.log(err);
         }
-        console.log("The README.md file has beeen successfully created!");
+        console.log("Congratulations, the (Generated)README.md file has beeen successfully created!");
     });
 }
 
 // Function to initialize the app.
 async function init() {
-    console.log("Starting the README.md generator...");
+    console.log("Starting the (Generated)README.md generator...");
 
     // Prompt the user for answers.
     const answers = await inquirer.prompt(questions);
@@ -74,7 +74,7 @@ async function init() {
     let readmeContent = generatorMarkdown(answers);
 
         // Write the README file.
-        writeToFile("README.md", readmeContent);
+        writeToFile("(Generated)README.md", readmeContent);
 }
 
 // Call the init function to start the app.
