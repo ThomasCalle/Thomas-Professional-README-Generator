@@ -48,17 +48,28 @@ WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
 ```
 
-## Usage Instructions:
+## Usage Instructions
+1. Open the cloned repository in a source code editor e.g. Visual Studio Code.
+2. Open integrated terminal on index.js
+3. Enter “node index.js” in the command line
+4. Presented with npm inquirer questions through sequential order within the directory -  the user must provide essential README information in order to proceed to the next question in sequence.
+5. Once completed a file named (Generated)README.md will be made.
+6. At your discretion, you may rename the (Generated)README.md file to the file name of your choice.
+7. (Optional) Regarding future use, you may alter the prompted questions within the index.js and generatedMarkdown.js to suit your needs.
+8. (Optional) The (Generated)README.md file serves as a foundation so you are not limited to altering the file - once generated you may alter the document to your preferences just like any other README.md file.
 
-### Screenshot: 
-[Click Here:]()
-### Video Demonstration:
-[YouTube:](https://github.com/ThomasCalle)
 ### Solution URL: 
 [Link:](https://thomascalle.github.io/Thomas-Professional-README-Generator/)
+### Screenshot:
+![](./images/Thomas'%20Professional%20README.md%20Generator.png)
+### YouTube Video Walkthrough:
+[Click Here To Watch](https://www.youtube.com/watch?v=_HxQkorZbcI&t=32s)
 
-
-## Installation Process:
+## Installation Process
+1. Clone the repository: [Thomas-Professional-README-Generator](https://github.com/ThomasCalle/Thomas-Professional-README-Generator)
+2. Install Node.JS [Version 16.18.1](https://nodejs.org/en/blog/release/v16.18.1/)
+3. Open the cloned repository in a source code editor.
+4. Open integrated terminal on index.js in order to run "npm i" on the command line to ensure that "node-modules" and "package.json" are operating on your local device.
 
 ## Built With
 - Saiyan Pride
@@ -86,12 +97,25 @@ THEN I am taken to the corresponding section of the README
   
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [Open Source Initiative Link](https://opensource.org/licenses/MIT)
 
+### Copyright © 2023 Thomas Calle
 ```
-Copyright © 2023 Thomas Calle
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 ```
 
   
